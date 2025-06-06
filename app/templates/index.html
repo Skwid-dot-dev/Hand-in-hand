@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hand in Hand Guidance</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h2>Hand in Hand</h2>
+    </header>
+    <main>
+        <h1>{{ scenario_title }}</h1>
+        <ul>
+            {% for step in steps %}
+            <li>{{ step }}</li>
+            {% endfor %}
+        </ul>
+        <!-- Placeholder content for demonstration if not using Flask/Jinja2 context -->
+        <!--
+        <h2>Scenario Title Placeholder</h2>
+        <ul>
+            <li>Step 1 Placeholder</li>
+            <li>Step 2 Placeholder</li>
+            <li>Step 3 Placeholder</li>
+        </ul>
+        -->
+    </main>
+    <footer>
+        <p>&copy; 2023 Hand in Hand</p>
+    </footer>
+</body>
+</html>
